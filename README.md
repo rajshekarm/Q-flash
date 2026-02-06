@@ -51,7 +51,7 @@ State is managed by the backend server
 
 ---
 
-![Project structure](q-flash.jpg)
+![Project structure](./data/q-flash.png)
 
 ---
 
