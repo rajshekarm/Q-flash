@@ -1,8 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import twilio from 'twilio';
+
+import dotenv from 'dotenv';
+dotenv.config(); 
+console.log("API Key Loaded:");
+
+
 import { getSession, updateSession } from './engine/SessionManager.js';
 import { processQuery } from './engine/QueryEngine.js';
+
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));

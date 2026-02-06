@@ -1,4 +1,4 @@
-# SMS Customer Support Backend (Node.js + Twilio)
+# Backend Query Engine for SMS Queries(Node.js + Twilio)
 
 This project is a simple, production-ready **Node.js + Express backend** that allows customers to send **SMS messages from mobile phones** and receive automated replies using **Twilio**.
 

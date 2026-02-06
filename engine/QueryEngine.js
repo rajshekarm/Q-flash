@@ -1,6 +1,6 @@
 import { OpenAI } from "openai";
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const openai = new OpenAI({ apiKey: "xxxx" });
 
 export const processQuery = async (userMessage, history) => {
     const response = await openai.chat.completions.create({
@@ -17,4 +17,5 @@ export const processQuery = async (userMessage, history) => {
     });
 
     return response.choices[0].message.content;
+    
 };
