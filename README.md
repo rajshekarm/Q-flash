@@ -51,17 +51,8 @@ State is managed by the backend server
 
 ---
 
+![Project structure](q-flash.jpg)
 
-## Project Structure
-sms-backend/
-├── engine/
-│   ├── QueryEngine.js      # LLM logic
-│   └── SessionManager.js   # Redis-based state management
-├── services/
-│   └── TwilioService.js    
-├── server.js               # Main Entry Point (Renamed)
-├── Dockerfile              # Updated for server.js
-└── docker-compose.yml
 ---
 
 ## Prerequisites
