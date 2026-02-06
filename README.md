@@ -34,8 +34,11 @@ Twilio
 Customer Phone  
 
 There is **no persistent connection** between the phone and server.  
+
+### TODO: Establish Persistant Cnnection and State between customers and server
 Each SMS triggers a new HTTP request.
 
+State is managed by the backend server
 ---
 
 ## 🛠 Tech Stack
@@ -48,17 +51,20 @@ Each SMS triggers a new HTTP request.
 
 ---
 
-## 📁 Project Structure
 
+## Project Structure
 sms-backend/
-├── index.js
-├── .env
-├── package.json
-└── README.md
-
+├── engine/
+│   ├── QueryEngine.js      # LLM logic
+│   └── SessionManager.js   # Redis-based state management
+├── services/
+│   └── TwilioService.js    
+├── server.js               # Main Entry Point (Renamed)
+├── Dockerfile              # Updated for server.js
+└── docker-compose.yml
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 - Node.js v16+
 - npm
@@ -123,6 +129,8 @@ Phones do NOT connect directly to your server.
 Twilio bridges telecom networks and your backend.
 
 ---
+
+
 
 ## 📄 License
 
